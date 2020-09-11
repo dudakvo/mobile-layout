@@ -1,0 +1,25 @@
+.icon{
+    fill: var(--icon-color);
+    transition-property: fill;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    header a:hover &, header a:focus &,
+    .regular-customers li:hover &, .regular-customers li:focus &{
+       fill: var(--accent-color); 
+    }
+
+    .after-hero &{
+        width: 70px;
+        height: 70px;
+    }    
+}
+
+.team .icon{
+    --color2: var(--secondary-bgcolor);
+    &:hover, &:focus{
+        --color2: var(--accent-color);
+        --color3: var(--primary-white-color);
+    }
+}
+
+

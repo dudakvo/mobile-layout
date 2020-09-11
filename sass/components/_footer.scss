@@ -1,0 +1,75 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+    color: var(--primary-white-color);
+
+    & a, & p{
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    & p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+
+    & address a{
+        display: block;
+    }
+
+    & b{
+        height: 16px;
+        left: 611px;
+        top: 2821px;
+
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+    
+        text-transform: uppercase;
+
+        color: var(--primary-white-color);
+    }
+
+    & address{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    & a{
+        text-decoration: none;
+    }
+
+    &-section p{
+        margin-bottom: 10px;
+    }
+
+    & .social-list a{
+        display: inline-block; 
+        transition-property: background-color;
+        transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        border-radius: 50%;
+     }
+    
+     & .social-list a:hover, footer .social-list a:focus{
+        background-color: var(--accent-color);
+    }
+}
+
+@each $iconName in $socialIcons {
+    .#{$iconName}{
+    width: 44px;
+    height: 44px;
+    --color2: rgba(255, 255, 255, 0.1);
+    --color3: var(--primary-white-color);
+
+    border-radius: 50%;    
+    }
+}

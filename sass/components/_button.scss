@@ -1,0 +1,52 @@
+.button{
+    /*display: block;*/
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+
+    &.form-button{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 29px;
+        padding-left: 29px;
+        margin-left: 12px;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 1.87;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+
+    &.primary{        
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;  
+    }
+}
+
+
+
+.form-button::after{
+    content: '';
+    width: 24px;
+    height: 24px;
+
+    margin-left: 10px;
+
+    background-image: url(../images/icon-send.svg);   
+}

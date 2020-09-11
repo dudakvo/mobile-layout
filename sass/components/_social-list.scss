@@ -1,0 +1,23 @@
+.social-list{
+    display: flex;
+    align-items: center;
+
+    .team &{
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    .team &>li{
+        margin-right: 10px;
+    }
+
+    .team &>li:last-child{
+        margin-right: 0px;
+    }
+
+    footer & li{
+        margin-right: 10px;
+    }
+
+    
+
+}
